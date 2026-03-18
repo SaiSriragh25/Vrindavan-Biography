@@ -1,0 +1,9 @@
+body{
+            background-color:pink ;
+            background-image: url("https://www.pngarts.com/files/10/Demon-Slayer-PNG-Image.png"),url("https://www.pngarts.com/files/10/Demon-Slayer-PNG-Background-Image.png");
+            background-repeat: no-repeat;
+            background-position:left,right;
+            background-attachment: fixed;
+            background-size: 20%,30%;
+        }
+    
