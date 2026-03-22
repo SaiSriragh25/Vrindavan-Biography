@@ -1,88 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
-    <link rel="stylesheet" href="ext2.css">
-</head>
-
-<body>
-    <pre>
-
-
-
-
-        
-        
-    </pre>
-    
-    <center>
-    <form action="./login.html">
-    <p>
+    <style>
+      body {
+        background-color: greenyellow;
+      }
+      .parent {
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(20px);
+        width: 25%;
+        text-align: center;
+        margin: 5% auto 5% auto;
+        padding: 10px 10px 30px 10px;
+        font-family: sans-serif;
+        box-shadow: 0px 1px 40px rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+      }
+      .form-field input {
+        padding: 10px;
+        width: 80%;
+        border-radius: 8px;
+        margin: 5px 0px 5px 0px;
+      }
+      .form-Dob {
+        padding: 10px;
+        color: crimson;
+      }
+      .form-radio {
+        padding: 10px;
+        color: brown;
+      }
+      .form-checkbox {
+        padding: 10px;
+      }
+      .form-field2 {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="./login.html" class="parent">
+      <h2><i>REGISTER</i></h2>
+      <div class="form-field">
+        <input type="text" placeholder="Enter your name" name="name" required />
+      </div>
+      <div class="form-field">
         <input
-            type="text"
-            placeholder="Enter your name"
-            name="name" required/>
+          type="Email"
+          placeholder="Enter your Email"
+          name="name"
+          required
+        />
+      </div>
 
-    </p>
-    <p>
-        <input type="Email"
-        placeholder="Enter your Email"
-        name="name" required/>
-    </p>
-
-    <p>
-        <input type="password" 
-        placeholder="Enter your pass word"
-        name="Password" required/>
-    </p>
-    <p>
-        <input type="number"
-        placeholder="Enter Mobile Number"
-        name="phone number" required />
-    </p>
-    <p>
+      <div class="form-field">
+        <input
+          type="password"
+          placeholder="Enter your pass word"
+          name="Password"
+          required
+        />
+      </div>
+      <div class="form-field">
+        <input
+          type="number"
+          placeholder="Enter Mobile Number"
+          name="phone number"
+          required
+        />
+      </div>
+      <div class="form-Dob">
         <label for="">Date of Birth</label>
-        <input type="date" required>
-    </p>
-    <p>
-        <input 
+        <input type="date" required />
+      </div>
+      <div class="form-radio">
+        Gender:<input
           type="radio"
           id="gmale"
           name="gender"
-          value="male" required/>
+          value="male"
+          required
+        />
         <label for="gmale">Male</label>
-        <input type="radio" id="gfemale" name="gender" value="female" required/>  
+        <input
+          type="radio"
+          id="gfemale"
+          name="gender"
+          value="female"
+          required
+        />
         <label for="gfemale">Female</label>
-    </p>
-    <p>
+      </div>
+      <div class="form-field2">
         <input type="checkbox" id="10th" value="10th" />
         <label for="10th">10th</label>
         <input type="checkbox" id="inter" value="Inter" />
         <label for="inter">Inter</label>
-        <input type="checkbox" id="Btech"value="Btech" /> 
-        <label for="Btech">Btech</label>  
-    </p>
-    <p>
-        <input type="file" style="width: 200px;" required>
-    </p>
-    <p>    <select required>
-            <option value="">Select Your City</option>
-            <option value="Hyderabad">Hyderabad</option>
-            <option value="Karimnagar">Karimnagar</option>
-            <option value="Warangal">Warangal</option>
-            
-          </select>
-    </p>    
-    
-    <p>
-        <textarea required placeholder="Enter your address" name="" id=""></textarea>
-    </p>
-    
-    <button>Submit</button>
+        <input type="checkbox" id="Btech" value="Btech" />
+        <label for="Btech">Btech</label>
+      </div>
+      <div>
+        <input type="file" style="width: 200px" required />
+      </div>
+      <div class="form-field2">
+        <select required>
+          <option value="">Select Your City</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Karimnagar">Karimnagar</option>
+          <option value="Warangal">Warangal</option>
+        </select>
+      </div>
 
+      <div class="form-field2">
+        <textarea
+          required
+          placeholder="Enter your address"
+          name=""
+          id=""
+        ></textarea>
+      </div>
+      <div class="form-button">
+        <button>Submit</button>
+      </div>
     </form>
-    </center>
-</body>
+  </body>
 </html>
