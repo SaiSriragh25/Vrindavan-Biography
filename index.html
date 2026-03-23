@@ -23,22 +23,30 @@
         padding: 10px;
         width: 80%;
         border-radius: 8px;
-        margin: 5px 0px 5px 0px;
+        
+        border: none;
       }
-      .form-Dob {
+      .parent div {
+        margin: 5% 0%;
+      }
+      .form-field button{
+        width: 80%;
+        border-radius: 8px;
         padding: 10px;
-        color: crimson;
+        background-color:blue;       
+         color:whitesmoke;
       }
-      .form-radio {
-        padding: 10px;
-        color: brown;
+      .form-edu{
+        display: flex;
+        width: 80%;
+        padding: 6px;
+        justify-content: space-between;
+        
+        margin: auto !important;
+        border-radius: 10px;
       }
-      .form-checkbox {
-        padding: 10px;
-      }
-      .form-field2 {
-        padding: 10px;
-      }
+      .
+
     </style>
   </head>
   <body>
@@ -59,7 +67,7 @@
       <div class="form-field">
         <input
           type="password"
-          placeholder="Enter your pass word"
+          placeholder="Enter your Password"
           name="Password"
           required
         />
@@ -94,18 +102,21 @@
         />
         <label for="gfemale">Female</label>
       </div>
-      <div class="form-field2">
+      <div class="form-edu">
         <input type="checkbox" id="10th" value="10th" />
         <label for="10th">10th</label>
         <input type="checkbox" id="inter" value="Inter" />
         <label for="inter">Inter</label>
+         <input type="checkbox" id="Diploma" value="Diploma" />
+        <label for="Diploma">Diploma</label>
         <input type="checkbox" id="Btech" value="Btech" />
         <label for="Btech">Btech</label>
+
       </div>
       <div>
         <input type="file" style="width: 200px" required />
       </div>
-      <div class="form-field2">
+      <div class="form-city">
         <select required>
           <option value="">Select Your City</option>
           <option value="Hyderabad">Hyderabad</option>
@@ -114,7 +125,7 @@
         </select>
       </div>
 
-      <div class="form-field2">
+      <div class="form-address">
         <textarea
           required
           placeholder="Enter your address"
@@ -122,8 +133,8 @@
           id=""
         ></textarea>
       </div>
-      <div class="form-button">
-        <button>Submit</button>
+      <div class="form-field">
+        <button>Register</button>
       </div>
     </form>
   </body>
